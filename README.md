@@ -1,65 +1,59 @@
-RISC-V Pyramid
+# RISC-V Pyramid
 
-Ein in RISC-V-Assembler entwickeltes Programm zur Ausgabe einer Sternpyramide. Das Projekt entstand im Rahmen einer universitären Aufgabe zur praktischen Auseinandersetzung mit Assemblerprogrammierung.
+A program written in RISC-V assembly that prints a pyramid of asterisks. The project was developed as part of a university assignment to gain practical experience with assembly programming.
 
-Beispiel
+## Example
 
-Bei einer im Speicher hinterlegten Höhe von 4 erzeugt das Programm folgende Ausgabe:
+For a height of 4 stored in memory, the program produces the following output:
 
+```text
    *
   ***
  *****
 *******
+```
 
-Umsetzung
+## Implementation
 
-Das Programm berechnet für jede Zeile die benötigte Anzahl an Leerzeichen und *-Zeichen und schreibt die Ausgabe in einen Puffer.
+For each row, the program calculates the required number of spaces and asterisks and writes the output to a buffer.
 
-Dabei wurde unter anderem mit folgenden Konzepten gearbeitet:
+The implementation covers several concepts, including:
 
-RISC-V-Assembler
+- RISC-V assembly
+- Register and memory management
+- Loops and conditional branches
+- Subroutines and function calls
+- Working with memory buffers
+- Calculating character positions
+- String output
 
-Register- und Speicherverwaltung
+A key component of the program is a subroutine that writes the appropriate number of spaces and asterisks to a buffer, depending on the current row.
 
-Schleifen und bedingte Sprünge
+## Execution
 
-Unterprogramme und Funktionsaufrufe
+The program was developed and executed using the riscVivid simulator.
 
-Arbeit mit Puffern im Speicher
+To run the program:
 
-Berechnung von Zeichenpositionen
+1. Download or clone the repository.
+2. Open the project in the riscVivid simulator.
+3. Assemble the program.
+4. Run the program in the simulator.
+5. Adjust the pyramid height by changing the corresponding value in memory.
 
-Ausgabe von Zeichenketten
+## Example Output
 
-Ein zentraler Bestandteil des Programms ist ein Unterprogramm, das abhängig von der gewünschten Zeile die entsprechenden Leerzeichen und Sternzeichen in einen Puffer schreibt.
+For a height of 4:
 
-Ausführung
-
-Das Programm wurde mit dem riscVivid-Simulator entwickelt und ausgeführt.
-
-Um das Programm auszuführen:
-
-Repository herunterladen oder klonen
-
-Projekt im riscVivid-Simulator öffnen
-
-Programm assemblieren
-
-Programm im Simulator ausführen
-
-Die Höhe der Pyramide kann über den entsprechenden Speicherwert angepasst werden
-
-Beispielausgabe
-
-Für eine Höhe von 4:
-
+```text
    *
   ***
  *****
 *******
+```
 
-Was ich dabei gelernt habe
+## What I Learned
 
-Durch das Projekt konnte ich praktische Erfahrungen mit hardwarenaher Programmierung sammeln. Besonders beschäftigt habe ich mich mit der Verwaltung von Registern und Speicher, der Umsetzung von Schleifen und Unterprogrammen sowie der Berechnung und Verarbeitung von Zeichen im Speicher.
+This project provided practical experience with low-level programming. I gained a better understanding of register and memory management, implementing loops and subroutines, and calculating and processing characters in memory.
 
-Der vollständige Quellcode befindet sich in diesem Repository.
+The complete source code is available in this repository.
